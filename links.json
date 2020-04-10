@@ -2,11 +2,11 @@
     "type":[
         {
             "name": "Java",
-            "link": "java-install.sh"
+            "link": "java-install.py"
         },
         {
             "name": "C/C++",
-            "link": "cpp-install.sh"
+            "link": "cpp-install.py"
         }
     ]
 }
