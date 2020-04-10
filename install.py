@@ -3,7 +3,7 @@ import json
 import os
 
 links_json=requests.get("https://install.ftmc.me/links.json").text
-links=json.load(links_json)
+links=json.loads(links_json)
 links=links['type']
 print("可以安装的目标：")
 for i in range(len(links)-1):
