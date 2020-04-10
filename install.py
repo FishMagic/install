@@ -15,6 +15,6 @@ while(1):
     else:
         print("选项不存在")
 link=links[target]["link"]
-os.system("wget https://install.ftmc.me/{0} -O {0}".format(link))
+os.system("wget --no-check-certificate https://install.ftmc.me/{0} -O {0}".format(link))
 os.system("python3 {}".format(link))
 os.remove(link)
