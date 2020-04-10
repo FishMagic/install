@@ -4,7 +4,8 @@ os.system("wget --no-check-certificate https://mirrors.ftmc.me/openj9.tar.gz -O 
 os.system("tar xvf openj9.tar.gz")
 os.remove("openj9.tar.gz")
 os.system("mv jdk* jdk")
-os.mkdir("/usr/local/java")
+try:
+    os.mkdir("/usr/local/java")
 os.system("mv jdk /usr/local/java")
 os.system("cp /etc/profile /etc/profile.bak")
 os.system("echo 'export JAVA_HOME=/usr/local/java/jdk' >> /etc/profile")
