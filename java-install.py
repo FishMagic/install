@@ -1,6 +1,6 @@
 import os
 
-os.system("wget https://mirrors.ftmc.me/openj9.tar.gz -O openj9.tar.gz")
+os.system("wget --no-check-certificate https://mirrors.ftmc.me/openj9.tar.gz -O openj9.tar.gz")
 os.system("tar xvf openj9.tar.gz")
 os.remove("openj9.tar.gz")
 os.system("mv jdk* jdk")
