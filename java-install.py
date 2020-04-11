@@ -19,8 +19,10 @@ while(1):
     downlaod=int(input("Chooes one to downlaod:"))
     if target==0:
         os.system("wget --no-check-certificate {} -O openj9.tar.gz".format(links[target]["directDownloadLink"]))
+        break
     elif target==1:
         os.system("wget --no-check-certificate {} -O openj9.tar.gz".format(links[target]["mirrorDownloadLink"]))
+        break
     else:
         print("Your choose is not exist.")
 os.system("tar xvf openj9.tar.gz")
