@@ -16,5 +16,5 @@ while(1):
         print("Your choose is not exist.")
 link=links[target]["link"]
 os.system("wget --no-check-certificate https://install.ftmc.me/{0} -O {0}".format(link))
-os.system("python3 {}".format(link))
+os.system("sudo python3 {}".format(link))
 os.remove(link)
