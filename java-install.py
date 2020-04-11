@@ -17,10 +17,10 @@ while(1):
 print("Which is you want to downlaod from:\n\t0) Origin\n\t1) Mirros")
 while(1):
     downlaod=int(input("Chooes one to downlaod:"))
-    if target==0:
+    if downlaod==0:
         os.system("wget --no-check-certificate {} -O openj9.tar.gz".format(links[target]["directDownloadLink"]))
         break
-    elif target==1:
+    elif downlaod==1:
         os.system("wget --no-check-certificate {} -O openj9.tar.gz".format(links[target]["mirrorDownloadLink"]))
         break
     else:
