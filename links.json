@@ -1,1 +1,12 @@
-{"type":[{"name":"Java","link":"java-install.py"},{"name":"C/C++","link":"cpp-install.py"}]}
+{
+    "type": [
+        {
+            "name": "Java",
+            "link": "java-install.py"
+        },
+        {
+            "name": "C/C++",
+            "link": "cpp-install.py"
+        }
+    ]
+}
