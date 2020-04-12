@@ -29,7 +29,7 @@ os.system("tar xvf openj9.tar.gz")
 os.remove("openj9.tar.gz")
 os.system("mv {}/ {}/".format(links[target]["originName"],links[target]["targetName"]))
 os.system("mkdir /usr/local/java")
-os.system("mv {} /usr/local/java".format(links[target]["targetName"]))
+os.system("mv {}/ /usr/local/java/ -f".format(links[target]["targetName"]))
 open("/etc/profile",)
 for line in open("/etc/profile"):
     if line.find("JAVA_HOME") != -1:
