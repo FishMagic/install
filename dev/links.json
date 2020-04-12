@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0b",
+    "type": [
+        {
+            "name": "Java",
+            "link": "java-install.py"
+        },
+        {
+            "name": "C/C++",
+            "link": "cpp-install.py"
+        },
+        {
+            "name": "Debug",
+            "link": "debug.py"
+        }
+    ]
+}
