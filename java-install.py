@@ -27,8 +27,9 @@ while(1):
         print("Your choose is not exist.")
 os.system("tar xvf openj9.tar.gz")
 os.remove("openj9.tar.gz")
-os.system("mv {}/ {}/".format(links[target]["originName"],links[target]["targetName"]))
+os.system("mv {}/ {}/ -f".format(links[target]["originName"],links[target]["targetName"]))
 os.system("mkdir /usr/local/java")
+os.rmdir("/usr/local/java/{}")
 os.system("mv {}/ /usr/local/java/ -f".format(links[target]["targetName"]))
 open("/etc/profile",)
 for line in open("/etc/profile"):
